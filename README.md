@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Dianzhou Auto | China EV Export Supplier</title>
+  <meta name="description" content="Dianzhou Auto helps overseas dealers and importers source new energy vehicles from China with PI quotation, vehicle inspection, export support and long-term cooperation." />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #07111f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(7, 17, 31, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand strong {
+      display: block;
+      font-size: 22px;
+      letter-spacing: 0.3px;
+    }
+
+    .brand span {
+      display: block;
+      font-size: 12px;
+      color: #9fb0c7;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: #c7d5e8;
+      font-size: 14px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .menu a:hover {
+      color: #ffffff;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 22px;
+      border-radius: 14px;
+      font-weight: 700;
+      transition: 0.18s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: #19c463;
+      color: #06110b;
+      box-shadow: 0 12px 32px rgba(25,196,99,0.28);
+    }
+
+    .btn-secondary {
+      border-color: rgba(255,255,255,0.18);
+      color: #ffffff;
+      background: rgba(255,255,255,0.04);
+    }
+
+    .hero {
+      padding: 58px 0 62px;
+      background:
+        radial-gradient(circle at top left, rgba(35,91,160,0.32), transparent 34%),
+        radial-gradient(circle at top right, rgba(255,177,61,0.10), transparent 26%),
+        linear-gradient(180deg, #0b1c33 0%, #07111f 100%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid rgba(255, 204, 102, 0.42);
+      border-radius: 999px;
+      color: #ffcc66;
+      background: rgba(255, 204, 102, 0.08);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: 56px;
+      line-height: 1.04;
+      margin: 0 0 18px;
+      letter-spacing: -1.1px;
+    }
+
+    .hero p {
+      color: #d7e2f1;
+      font-size: 18px;
+      margin: 0 0 26px;
+      max-width: 680px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+
+    .hero-points {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .point {
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.10);
+    }
+
+    .point strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 16px;
+    }
+
+    .point span {
+      color: #c7d5e8;
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .hero-image {
+      border-radius: 28px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 22px 60px rgba(0,0,0,0.35);
+      background: rgba(255,255,255,0.04);
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 560px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .section {
+      padding: 76px 0;
+    }
+
+    .section-title {
+      max-width: 760px;
+      margin-bottom: 30px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      line-height: 1.15;
+      margin: 0 0 14px;
+      color: #ffcc66;
+    }
+
+    .section-title p {
+      margin: 0;
+      color: #d7e2f1;
+      font-size: 17px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 22px;
+      padding: 24px;
+    }
+
+    .card strong {
+      display: block;
+      font-size: 19px;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      margin: 0;
+      color: #c7d5e8;
+      font-size: 15px;
+    }
+
+    .proof {
+      background: rgba(255, 204, 102, 0.07);
+      border-top: 1px solid rgba(255, 204, 102, 0.20);
+      border-bottom: 1px solid rgba(255, 204, 102, 0.20);
+    }
+
+    .proof-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      align-items: center;
+    }
+
+    .proof-text h2 {
+      font-size: 36px;
+      line-height: 1.15;
+      margin: 0 0 16px;
+      color: #ffffff;
+    }
+
+    .proof-text p {
+      margin: 0 0 18px;
+      color: #d7e2f1;
+      font-size: 17px;
+    }
+
+    .proof-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .proof-item {
+      padding: 15px 16px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.10);
+      color: #e6edf7;
+    }
+
+    .process {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+
+    .step {
+      padding: 20px 18px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.10);
+    }
+
+    .num {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      background: #ffcc66;
+      color: #07111f;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+
+    .step strong {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      margin: 0;
+      color: #c7d5e8;
+      font-size: 14px;
+    }
+
+    .markets {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .market {
+      padding: 11px 15px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.10);
+      color: #e6edf7;
+      font-size: 14px;
+    }
+
+    .faq {
+      display: grid;
+      gap: 14px;
+    }
+
+    .faq-item {
+      padding: 22px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.10);
+    }
+
+    .faq-item strong {
+      display: block;
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .faq-item p {
+      margin: 0;
+      color: #c7d5e8;
+      font-size: 15px;
+    }
+
+    .final {
+      text-align: center;
+      background: #0c2038;
+    }
+
+    .final h2 {
+      font-size: 38px;
+      line-height: 1.15;
+      margin: 0 0 14px;
+      color: #ffcc66;
+    }
+
+    .final p {
+      max-width: 720px;
+      margin: 0 auto 24px;
+      color: #d7e2f1;
+      font-size: 17px;
+    }
+
+    .footer {
+      padding: 28px 0;
+      color: #9fb0c7;
+      font-size: 13px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .float-wa {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 50;
+    }
+
+    .float-wa a {
+      width: 58px;
+      height: 58px;
+      border-radius: 999px;
+      background: #19c463;
+      color: #06110b;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 18px 36px rgba(25,196,99,0.35);
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .proof-box {
+        grid-template-columns: 1fr;
+      }
+
+      .grid-3,
+      .process {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      h1 {
+        font-size: 44px;
+      }
+
+      .hero-image img {
+        height: 440px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .header {
+        position: static;
+      }
+
+      .menu {
+        display: none;
+      }
+
+      .nav {
+        min-height: auto;
+        padding: 16px 0;
+      }
+
+      .hero {
+        padding: 42px 0 52px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .hero-points,
+      .grid-3,
+      .process {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .hero-image img {
+        height: 330px;
+      }
+
+      .section {
+        padding: 58px 0;
+      }
+
+      .section-title h2,
+      .final h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="brand">
+        <strong>Dianzhou Auto</strong>
+        <span>China EV Export Supplier</span>
+      </div>
+
+      <nav class="menu">
+        <a href="#services">Services</a>
+        <a href="#proof">Proof</a>
+        <a href="#process">Process</a>
+        <a href="#markets">Markets</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-primary" href="https://wa.me/8613671389313?text=Hello%2C%20I%20am%20interested%20in%20China%20EV%20supply%20and%20dealer%20cooperation.">WhatsApp Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="badge">Reliable China EV Sourcing For Overseas Dealers</div>
+
+            <h1>China New Energy Vehicles For Dealers & Importers</h1>
+
+            <p>
+              Dianzhou Auto helps overseas car dealers, importers and business buyers source new energy vehicles from China with PI quotation, vehicle inspection, export support and long-term supply cooperation.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="https://wa.me/8613671389313?text=Hello%2C%20I%20want%20to%20know%20about%20China%20EV%20supply%20and%20dealer%20cooperation.">
+                Contact on WhatsApp
+              </a>
+              <a class="btn btn-secondary" href="#process">
+                View Export Process
+              </a>
+            </div>
+
+            <div class="hero-points">
+              <div class="point">
+                <strong>PI Quotation Support</strong>
+                <span>Clear model, quantity, pricing and order information before payment confirmation.</span>
+              </div>
+
+              <div class="point">
+                <strong>Vehicle Inspection</strong>
+                <span>VIN, vehicle condition, photos and videos can be checked before shipment.</span>
+              </div>
+
+              <div class="point">
+                <strong>RHD Vehicle Options</strong>
+                <span>Suitable for Kenya, Tanzania, Uganda and other right-hand-drive markets.</span>
+              </div>
+
+              <div class="point">
+                <strong>Dealer Cooperation</strong>
+                <span>Built for repeat buyers, local dealers, importers and business procurement.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <img src="hero.png" alt="Dianzhou Auto showroom and export service" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>What We Provide</h2>
+          <p>
+            We are not only selling one vehicle. We provide China EV sourcing, dealer support and export service for overseas markets.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <strong>Dealer Cooperation</strong>
+            <p>Support long-term supply for local car dealers, importers and auto businesses.</p>
+          </div>
+
+          <div class="card">
+            <strong>PI Quotation</strong>
+            <p>Clear model information, price reference and export details before purchase.</p>
+          </div>
+
+          <div class="card">
+            <strong>Export Support</strong>
+            <p>Vehicle inspection, VIN confirmation, loading and port shipment support.</p>
+          </div>
+
+          <div class="card">
+            <strong>RHD Vehicle Supply</strong>
+            <p>Right-hand drive models available for suitable African and overseas markets.</p>
+          </div>
+
+          <div class="card">
+            <strong>Bulk Order Support</strong>
+            <p>Suitable for dealers, fleets, importers and repeat buyers.</p>
+          </div>
+
+          <div class="card">
+            <strong>China Sourcing</strong>
+            <p>Access to multiple Chinese new energy vehicle brands and models.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proof" class="section proof">
+      <div class="container">
+        <div class="proof-box">
+          <div class="proof-text">
+            <h2>Real export capability is more important than beautiful promises.</h2>
+            <p>
+              For overseas buyers, trust is the first step. We support vehicle confirmation, PI details, inspection process and shipment updates before delivery.
+            </p>
+
+            <a class="btn btn-primary" href="https://wa.me/8613671389313?text=Hello%2C%20I%20want%20to%20check%20EV%20models%2C%20quotation%20and%20export%20process.">
+              Ask For Details
+            </a>
+          </div>
+
+          <div class="proof-list">
+            <div class="proof-item">Physical showroom and real business presence</div>
+            <div class="proof-item">Vehicle stock and batch supply capability</div>
+            <div class="proof-item">PI quotation and order confirmation support</div>
+            <div class="proof-item">Loading, shipment and delivery process updates</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Simple Export Process</h2>
+          <p>
+            A clear process helps serious buyers understand what happens after contacting us.
+          </p>
+        </div>
+
+        <div class="process">
+          <div class="step">
+            <div class="num">1</div>
+            <strong>Confirm Demand</strong>
+            <p>Tell us your target model, quantity, budget, country and intended use.</p>
+          </div>
+
+          <div class="step">
+            <div class="num">2</div>
+            <strong>PI Quotation</strong>
+            <p>We provide model details, price reference and export information.</p>
+          </div>
+
+          <div class="step">
+            <div class="num">3</div>
+            <strong>Vehicle Inspection</strong>
+            <p>VIN, vehicle condition, photos and videos can be checked before shipment.</p>
+          </div>
+
+          <div class="step">
+            <div class="num">4</div>
+            <strong>Loading & Shipment</strong>
+            <p>We arrange export preparation, loading updates and shipment information.</p>
+          </div>
+
+          <div class="step">
+            <div class="num">5</div>
+            <strong>Long-Term Cooperation</strong>
+            <p>For dealers and importers, we support repeated sourcing and supply.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="markets" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Markets We Focus On</h2>
+          <p>
+            We are building long-term EV supply cooperation with buyers and dealers in African and other overseas markets.
+          </p>
+        </div>
+
+        <div class="markets">
+          <div class="market">Kenya</div>
+          <div class="market">Tanzania</div>
+          <div class="market">Uganda</div>
+          <div class="market">Zimbabwe</div>
+          <div class="market">Other African Markets</div>
+          <div class="market">RHD Markets</div>
+          <div class="market">Dealer Cooperation</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            These questions help buyers understand your service before contacting you.
+          </p>
+        </div>
+
+        <div class="faq">
+          <div class="faq-item">
+            <strong>Can I ask for a quotation before deciding?</strong>
+            <p>Yes. You can first send your target model, quantity and country. We will provide quotation details for your review.</p>
+          </div>
+
+          <div class="faq-item">
+            <strong>Can you support dealer cooperation?</strong>
+            <p>Yes. We support dealers, importers and repeat buyers looking for long-term China EV supply.</p>
+          </div>
+
+          <div class="faq-item">
+            <strong>Can vehicles be checked before shipment?</strong>
+            <p>Yes. Vehicle photos, videos, VIN confirmation and inspection information can be shared before shipment.</p>
+          </div>
+
+          <div class="faq-item">
+            <strong>What should I send first?</strong>
+            <p>Please send your country, target model, planned quantity and budget range. This helps us give you a useful answer faster.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final">
+      <div class="container">
+        <h2>Get EV Supply & Dealer Cooperation Details</h2>
+        <p>
+          Send us your country, target model and purchase plan. We will help you check suitable vehicles, price reference and export process.
+        </p>
+
+        <a class="btn btn-primary" href="https://wa.me/8613671389313?text=Hello%2C%20I%20am%20interested%20in%20China%20EV%20dealer%20cooperation.%20Please%20send%20me%20more%20details.">
+          Contact on WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <div>© Dianzhou Auto · China EV Export Supplier</div>
+      <div>China new energy vehicle sourcing · PI quotation · Export support</div>
+    </div>
+  </footer>
+
+  <div class="float-wa">
+    <a href="https://wa.me/8613671389313?text=Hello%2C%20I%20want%20to%20know%20about%20China%20EV%20supply%20and%20dealer%20cooperation.">WA</a>
+  </div>
+</body>
+</html>
